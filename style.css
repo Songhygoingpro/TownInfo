@@ -58,6 +58,10 @@ section {
   padding: 0 1rem;
 }
 
+.section-title {
+  color: rgb(0, 79, 141);
+}
+
 .about-section {
   display: grid;
   justify-content: center;
@@ -277,7 +281,7 @@ section {
 }
 
 .benefit-section__locals img {
-  max-width:6rem;
+  max-width:9rem;
   width: 100%;
   height: auto;
 }
@@ -286,6 +290,64 @@ section {
   max-width: 1040px;
   width: 100%;
   height: auto;
+}
+
+.case-section__inner {
+  max-width: 1040px;
+  width: 100%;
+}
+
+.case-section__content {
+  display: flex;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+.case-section__content img {
+  max-width: 5rem;
+  width: 100%;
+  max-height: 5rem;
+}
+
+.case-section__content span {
+  color: #e98400;
+}
+
+.conclusion-section__inner {
+  max-width: 1040px;
+  width: 100%;
+}
+
+.conclusion-section__inner img {
+  max-width: 1040px;
+  width: 100%;
+  height: auto;
+}
+
+.conclusion-section__inner h3 {
+  text-decoration: underline;
+  text-underline-offset: auto; 
+  text-decoration-thickness: 5px;
+  text-decoration-color: rgb(253, 236, 0)
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.footer__inner  {
+  background-color: rgb(0, 79, 141);
+  text-align: center;
+  padding: 0.75rem 0;  
+}
+
+.footer__inner p {
+  font-size: 12px;
+  font-weight: 600;
+  margin:auto 0;
+  color: white;
 }
 
 /*block reveal animation*/
@@ -346,6 +408,8 @@ section {
   visibility: hidden;
 }
 
+
+/*breakpoint*/
 @media screen and (max-width: 768px) {
   .hero-section {
     height: auto;
@@ -406,6 +470,11 @@ section {
   .benefit-section__textimagewrapper p {
     font-size: 16px;
   }
+
+  .case-section__content h4 {
+    font-size: 18px;  
+  }
+  
   
 }
 
