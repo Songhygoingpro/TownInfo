@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
-const burgerInput = document.querySelector('.burger input');
+const burgerInput = document.getElementById('burger');
 
 window.addEventListener('scroll', function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

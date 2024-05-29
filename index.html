@@ -30,20 +30,22 @@
                 </li>
             </ul>
         </nav>
-        <label class="burger d-md-none d-block" for="burger">
-            <input type="checkbox" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-menu__container d-block d-md-none">
+            <input type="checkbox" id="burger" />
+            <label for="burger" class="nav-menu__button">
+                <span class="nav-menu__button__burger"></span>
+                <span class="nav-menu__button__burger"></span>
+                <span class="nav-menu__button__burger"></span>
+            </label>
             <nav class="nav-menu ">
                 <ul class="p-3 pb-3 m-0 d-flex flex-column gap-3">
-                    <li><a href="#about">ABOUT APPLICATION</a></li>
-                    <li><a href="#benefits">BENEFITS</a></li>
-                    <li><a href="#case">CASE</a></li>
+                    <li><a href="/index.html#about">ABOUT APPLICATION</a></li>
+                    <li><a href="/index.html#benefits">BENEFITS</a></li>
+                    <li><a href="/index.html#case">CASE</a></li>
                     <li><a href="/register.html">CONTACT</a></li>
                 </ul>
             </nav>
-        </label>
+        </div>
     </header>
     <main>
         <section class="hero-section">
@@ -82,7 +84,7 @@
                             What is the“Town Information Application”?
                         </h1>
                     </div>
-                    <p data-aos="fadeUp">
+                    <p class="fs-5" data-aos="fadeUp">
                         The information application specialized for towns and housing
                         complexes will maximize the attractiveness of the area and
                         provide a rich experience for residents and visitors.
@@ -93,24 +95,24 @@
                     <ul
                         class="about-section__imagecontent d-flex bg-white rounded-top-4 justify-content-between gap-3 gap-lg-5 p-2 p-lg-3 mx-3">
                         <li>
-                            <h5>The latest information for stores</h5>
+                            <h5>The latest information</h5>
                             <p>
-                                Efficiently obtainthe latest information about stores, events
+                                Efficiently obtain the latest information about stores, events
                                 and famous places
                             </p>
                         </li>
                         <li>
                             <h5>Function integretion</h5>
                             <p>
-                                Contribute to the revitalization of local communities and
-                                economies
+                                Consolidates functions such as advertising, payments,
+                                reservations, and online shopping
                             </p>
                         </li>
                         <li>
                             <h5>Community revitalization</h5>
                             <p>
-                                Consolidates functions such as advertising, payments,
-                                reservations, and online shopping
+                                Contribute to the revitalization of local communities and
+                                economies
                             </p>
                         </li>
                     </ul>
@@ -156,7 +158,7 @@
                 <div class="issue-section__boxes d-grid gap-3">
                     <div class="issue-section__box w-100" data-aos="fadeUp">
                         <div class="issue-section__subtitle p-3 rounded-top-3 d-flex">
-                            <h4 class="text-white">Issues of storesand companies</h4>
+                            <h4 class="text-white">Issues of stores and companies</h4>
                             <img class="issue-section__companiesimage d-none d-md-flex"
                                 src="./img/issue-companies-illustration.png" alt="" />
                         </div>
@@ -197,7 +199,7 @@
                             <li class="issue-section__content d-flex gap-3">
                                 <img class="issue-section__point" src="./img/issue-point.png" alt="" />
                                 <p class="fw-medium">
-                                    Visiting the restaurant you wanted to go to, it is closed ortemporarily closed
+                                    Visiting the restaurant you wanted to go to, it is closed or temporarily closed
                                 </p>
                             </li>
                         </ul>
@@ -211,7 +213,7 @@
                     <div class="reveal-holder d-flex justify-content-center">
                         <div class="reveal-block right" data-aos="reveal-right"></div>
                         <h1 class="text-center reveal-content section-title">
-                            What is the “Town Information Application”?
+                            What you can do with the Application?
                         </h1>
                     </div>
                 </div>
@@ -251,20 +253,20 @@
                             <h4 class="text-center">Revenue and attract customers from advertisement</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Advertisement allows you to attract customers and generate revenue
+                                <p class="fw-medium fs-5">Advertisement allows you to attract customers and generate revenue
                                     <span>(Monthly advertising fee is charged)</span><br>
                                     &rarr; Management of the information you provide
                                 </p><img src="./img/benefit-section__companiesimage.png" alt="">
                             </div>
                         </li>
                         <li class="benefit-section__content" data-aos="fade-up">
-                            <h4 class="text-center">Attract more customers and increase sales by posting on the
+                            <h4 class="text-center ">Attract more customers and increase sales by posting on the
                                 application</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Store information, photos, SNS and couponscan be posted on the
+                                <p class="fw-medium fs-5">Store information, photos, SNS and coupons can be posted on the
                                     application <span>(Usage fee is charged)</span><br>
-                                    &rarr; Increase in exposure attract more customers. It leads to higher sales.</p>
+                                    &rarr; Increase in exposure attract more customers. It leads to higher sales</p>
                                 <img src="./img/benefit-section__companiesimage1.png" alt="">
                             </div>
                         </li>
@@ -272,7 +274,7 @@
                             <h4 class="text-center">Revenue from the online store</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Orders can be taken from in and out of town through the online
+                                <p class="fw-medium fs-5">Orders can be taken from in and out of town through the online
                                     store
                                     <span>(Fees charged as a percentage of sales costs)</span>
                                 </p><img src="./img/benefit-section__companiesimage2.png" alt="">
@@ -282,8 +284,8 @@
                             <h4 class="text-center">Revenue from delivery</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Sales to a wide range of customers are available and the
-                                    application enhanceuser convenience
+                                <p class="fw-medium fs-5">Sales to a wide range of customers are available and the
+                                    application enhance user convenience
                                     <span>(A partial usage fee is charged for delivery costs)</span>
                                 </p><img src="./img/benefit-section__companiesimage3.png" alt="">
                             </div>
@@ -302,7 +304,7 @@
                             <h4 class="text-center">Life becomes more convenient </h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Comfortable shopping and service are available</p><img
+                                <p class="fw-medium fs-5">Comfortable shopping and service are available</p><img
                                     src="./img/benefit-section__usersimage.png" alt="">
                             </div>
                         </li>
@@ -310,25 +312,26 @@
                             <h4 class="text-center">Easier payments</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">One payment system can complete everything and improve the quality
+                                <p class="fw-medium fs-5">One payment system can complete everything and improve the quality
                                     of life</p><img src="./img/benefit-section__usersimage1.png" alt="">
                             </div>
                         </li>
                         <li class="benefit-section__content" data-aos="fade-up">
-                            <h4 class="text-center">Revenue from the online store</h4>
+                            <h4 class="text-center">Information can be viewed in one place</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Informationis enriched by bringing all information together and
-                                    getting the latest information
-                                    <span>(Fees charged as a percentage of sales costs)</span>
+                                <p class="fw-medium fs-5">Information is enriched by 
+                                    bringing all information 
+                                    together and getting the latest 
+                                    information
                                 </p><img src="./img/benefit-section__usersimage2.png" alt="">
                             </div>
                         </li>
                         <li class="benefit-section__content" data-aos="fade-up">
-                            <h4 class="text-center">Revenue from delivery</h4>
+                            <h4 class="text-center">Improvement of well-being</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Enriched information and community revitalization will improve the
+                                <p class="fw-medium fs-5">Enriched information and community revitalization will improve the
                                     well-being of its residents</p><img src="./img/benefit-section__usersimage3.png"
                                     alt="">
                             </div>
@@ -347,7 +350,7 @@
                             <h4 class="text-center">Creation of new employment</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Increase in deliveries and other services will create jobs</p><img
+                                <p class="fw-medium fs-5">Increase in deliveries and other services will create jobs</p><img
                                     src="./img/benefit-section__localsimage.png" alt="">
                             </div>
                         </li>
@@ -355,7 +358,7 @@
                             <h4 class="text-center">Increase in immigrants and visitors</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">Increase in immigrants and visitors <br>
+                                <p class="fw-medium fs-5">Increase in immigrants and visitors <br>
                                     &rarr; Recognition by more people will lead to local revitalization</p><img
                                     src="./img/benefit-section__localsimage1.png" alt="">
                             </div>
@@ -364,7 +367,7 @@
                             <h4 class="text-center">Reduction of vacant lots</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">As their lives in that area become more affluent, more people will
+                                <p class="fw-medium fs-5">As their lives in that area become more affluent, more people will
                                     move to the area and then vacant lots and tenants will decreased</p><img
                                     src="./img/benefit-section__localsimage2.png" alt="">
                             </div>
@@ -373,7 +376,7 @@
                             <h4 class="text-center">Community revitalization</h4>
                             <div
                                 class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
-                                <p class="fw-medium">The economy will be stimulated by a decrease in vacant lotsand an
+                                <p class="fw-medium fs-5">The economy will be stimulated by a decrease in vacant lotsand an
                                     increase in employment</p><img src="./img/benefit-section__localsimage3.png" alt="">
                             </div>
                         </li>
@@ -409,8 +412,8 @@
                             application has <span>increased followers and customers</span></h4>
                     </li>
                     <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
-                        <h4>Instagram of “TANBAMU”, an Osaka Senshuregion information site,
-                            reached <span>more than 5,000 followers</span> in about 3 months!Rapidly growing!</h4>
+                        <h4>Instagram of “TANBAMU”, an Osaka Senshu region information site,
+                            reached <span>more than 5,000 followers</span> in about 3 months! Rapidly growing!</h4>
                     </li>
                 </ul>
             </div>
