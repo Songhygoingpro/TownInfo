@@ -12,19 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-  let lastScrollTop = 0;
-  const header = document.querySelector('.header');
+let lastScrollTop = 0;
+const header = document.querySelector('.header');
+const burgerInput = document.querySelector('.burger input');
 
-  window.addEventListener('scroll', function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
+  if (scrollTop > lastScrollTop) {
+    header.style.top = '-75px';
+    burgerInput.checked = false;
+  } else {
+    header.style.top = '0';
+  }
 
-      header.style.top = '-75px'; 
-    } else {
-
-      header.style.top = '0';
-    }
-
-    lastScrollTop = scrollTop;
-  });
+  lastScrollTop = scrollTop;
+});

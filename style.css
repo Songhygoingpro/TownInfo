@@ -16,6 +16,102 @@ section {
   position: sticky;
   top: 0;
   transition: top ease 0.3s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.logo {
+  max-width: 11.5rem;
+  width: 100%;
+  height: auto;
+}
+
+/*navigation menu button*/
+.burger {
+  position: relative;
+  width: 30px; 
+  height: 20px; 
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  z-index: 1001; 
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: -1px;
+  left: 3.5px; 
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 20px; 
+  left: 4px; 
+}
+
+.nav-menu {
+  position: fixed;
+  top: 72px;
+  right: 0;
+  width: auto;
+  height: auto;
+  background: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; 
+  padding: 1rem 1.5rem; 
+}
+
+.burger input:checked ~ .nav-menu {
+  transform: translateX(0);
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu li {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
 }
 
 .hero-section {
@@ -340,13 +436,13 @@ footer {
 .footer__inner  {
   background-color: rgb(0, 79, 141);
   text-align: center;
-  padding: 0.75rem 0;  
+  padding: 0.75rem 0;
 }
 
 .footer__inner p {
   font-size: 12px;
   font-weight: 600;
-  margin:auto 0;
+  margin: auto 0;
   color: white;
 }
 
@@ -421,11 +517,6 @@ footer {
 
   .hero-section__subheadline {
     font-size: 20px;
-  }
-
-  .logo {
-    width: 10rem;
-    height: auto;
   }
 
   .hero-section__phonemockup {
@@ -508,11 +599,6 @@ footer {
     max-width: 60rem;
     max-height: 60vh;
     width: 100%;
-    height: auto;
-  }
-
-  .logo {
-    width: 12rem;
     height: auto;
   }
 }

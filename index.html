@@ -20,17 +20,30 @@
         </div>
         <nav class="d-md-block d-none">
             <ul class="d-flex p-0 m-0 gap-4">
-
                 <li>
-                    <a class="text-decoration-none text-black fw-medium" href="About">ABOUT APPLICATION</a>
+                    <a class="text-decoration-none text-black fw-medium" href="#about">ABOUT APPLICATION</a>
                 </li>
                 <li><a class="text-decoration-none text-black fw-medium" href="#benefits">BENEFITS</a></li>
                 <li><a class="text-decoration-none text-black fw-medium" href="#case">CASE</a></li>
                 <li>
-                    <a class="text-decoration-none text-black fw-medium" href="#contact">CONTACT</a>
+                    <a class="text-decoration-none text-black fw-medium" href="/register.html">CONTACT</a>
                 </li>
             </ul>
         </nav>
+        <label class="burger d-md-none d-block" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <nav class="nav-menu ">
+                <ul class="p-3 pb-3 m-0 d-flex flex-column gap-3">
+                    <li><a href="#about">ABOUT APPLICATION</a></li>
+                    <li><a href="#benefits">BENEFITS</a></li>
+                    <li><a href="#case">CASE</a></li>
+                    <li><a href="/register.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </label>
     </header>
     <main>
         <section class="hero-section">
@@ -60,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="about-section__inner grid justify-content-center pt-5">
                 <div class="about-section__content d-flex flex-column align-items-center gap-2 px-2">
                     <div class="reveal-holder text-center">
@@ -224,7 +237,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefit-section d-grid justify-content-center">
+        <section class="benefit-section d-grid justify-content-center" id="benefits">
             <div class="benefit-section__inner d-grid gap-5 pt-5 px-3">
                 <div class="benefit-section__companies d-flex flex-column justify-content-center gap-4">
                     <div class="benefit-section__title d-flex justify-content-center">
@@ -237,7 +250,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Revenue and attract customers from advertisement</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Advertisement allows you to attract customers and generate revenue
                                     <span>(Monthly advertising fee is charged)</span><br>
                                     &rarr; Management of the information you provide
@@ -248,7 +261,7 @@
                             <h4 class="text-center">Attract more customers and increase sales by posting on the
                                 application</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Store information, photos, SNS and couponscan be posted on the
                                     application <span>(Usage fee is charged)</span><br>
                                     &rarr; Increase in exposure attract more customers. It leads to higher sales.</p>
@@ -258,7 +271,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Revenue from the online store</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Orders can be taken from in and out of town through the online
                                     store
                                     <span>(Fees charged as a percentage of sales costs)</span>
@@ -268,7 +281,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Revenue from delivery</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Sales to a wide range of customers are available and the
                                     application enhanceuser convenience
                                     <span>(A partial usage fee is charged for delivery costs)</span>
@@ -288,7 +301,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Life becomes more convenient </h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center justify-content-between d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Comfortable shopping and service are available</p><img
                                     src="./img/benefit-section__usersimage.png" alt="">
                             </div>
@@ -296,15 +309,15 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Easier payments</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">One payment system can complete everything and improve the quality
                                     of life</p><img src="./img/benefit-section__usersimage1.png" alt="">
                             </div>
                         </li>
                         <li class="benefit-section__content" data-aos="fade-up">
-                            <h4 class="text-center">Revenue from theonline store</h4>
+                            <h4 class="text-center">Revenue from the online store</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Informationis enriched by bringing all information together and
                                     getting the latest information
                                     <span>(Fees charged as a percentage of sales costs)</span>
@@ -314,7 +327,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Revenue from delivery</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Enriched information and community revitalization will improve the
                                     well-being of its residents</p><img src="./img/benefit-section__usersimage3.png"
                                     alt="">
@@ -333,7 +346,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Creation of new employment</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex justify-content-between gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">Increase in deliveries and other services will create jobs</p><img
                                     src="./img/benefit-section__localsimage.png" alt="">
                             </div>
@@ -341,8 +354,8 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Increase in immigrants and visitors</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
-                                <p class="fw-medium">Increase in immigrants and visitors
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Increase in immigrants and visitors <br>
                                     &rarr; Recognition by more people will lead to local revitalization</p><img
                                     src="./img/benefit-section__localsimage1.png" alt="">
                             </div>
@@ -350,7 +363,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Reduction of vacant lots</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">As their lives in that area become more affluent, more people will
                                     move to the area and then vacant lots and tenants will decreased</p><img
                                     src="./img/benefit-section__localsimage2.png" alt="">
@@ -359,7 +372,7 @@
                         <li class="benefit-section__content" data-aos="fade-up">
                             <h4 class="text-center">Community revitalization</h4>
                             <div
-                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center d-flex gap-2">
+                                class="benefit-section__textimagewrapper flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
                                 <p class="fw-medium">The economy will be stimulated by a decrease in vacant lotsand an
                                     increase in employment</p><img src="./img/benefit-section__localsimage3.png" alt="">
                             </div>
@@ -374,10 +387,10 @@
                         <h1 class="section-title reveal-content">Overall Benefits</h1>
                     </div>
                 </div>
-                <img src="./img/benefit-section__overall.png" alt="">
+                <img src="./img/benefit-section__overall.png" data-aos="fadeUp" alt>
             </div>
         </section>
-        <section class="case-section d-grid justify-content-center">
+        <section class="case-section d-grid justify-content-center" id="case">
             <div class="case-section__inner pt-5 d-grid gap-4">
                 <div class="case-section__title d-flex justify-content-center">
                     <div class="reveal-holder d-flex justify-content-center">
@@ -386,16 +399,16 @@
                     </div>
                 </div>
                 <ul class="case-section__contents d-grid gap-3 px-3">
-                    <li class="case-section__content"><img src="./img/case-point.png" alt="">
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
                         <h4>Increased stores SNS <span>followers by about 100</span>
                             <br> → Leads to increased recognition
                         </h4>
                     </li>
-                    <li class="case-section__content"><img src="./img/case-point.png" alt="">
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
                         <h4>Paid advertisement did not produce outcomes, but introduction of the
                             application has <span>increased followers and customers</span></h4>
                     </li>
-                    <li class="case-section__content"><img src="./img/case-point.png" alt="">
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
                         <h4>Instagram of “TANBAMU”, an Osaka Senshuregion information site,
                             reached <span>more than 5,000 followers</span> in about 3 months!Rapidly growing!</h4>
                     </li>
@@ -410,7 +423,7 @@
                         <h1 class="section-title reveal-content">Conclusion</h1>
                     </div>
                 </div>
-                <img src="./img/conclusion-section__image.png" alt="">
+                <img src="./img/conclusion-section__image.png" data-aos="fadeUp" alt>
                 <h3 class="text-center">More people recognize the city's development and attracts attention from all
                     over the world</h3>
             </div>
