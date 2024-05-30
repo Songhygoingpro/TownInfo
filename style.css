@@ -25,7 +25,6 @@ section {
   height: auto;
 }
 
-
 /*navigation menu*/
 #burger {
   display: none;
@@ -194,7 +193,7 @@ section {
   position: relative;
 }
 
-.issue-section__content p {
+.issue-section__item p {
   font-size: 20px;
 }
 
@@ -523,7 +522,7 @@ footer {
     font-size: 24px;
   }
 
-  .issue-section__content p {
+  .issue-section__item p {
     font-size: 16px;
   }
 
@@ -589,7 +588,7 @@ footer {
   }
 
   .hero-section__phoneimage--desktop {
-    max-width: 50rem;
+    max-width: 60rem;
     max-height: 60vh;
     width: 100%;
     height: auto;
