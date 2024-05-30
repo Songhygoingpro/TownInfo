@@ -332,6 +332,10 @@ section {
   color: white;
 }
 
+.benefit-section__content p {
+  font-size: 20px;
+}
+
 .benefit-section__companies img {
   max-width: 6rem;
   width: 100%;
