@@ -25,6 +25,8 @@ section {
   height: auto;
 }
 
+
+/*navigation menu*/
 #burger {
   display: none;
 }
@@ -44,7 +46,7 @@ section {
 }
 
 .nav-menu__button span {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: black;
   display: inline-block;
@@ -132,7 +134,7 @@ section {
   height: auto;
 }
 
-.hero-section__phonemockup-md {
+.hero-section__phonemockup--mobile {
   max-width: 20rem;
   width: 100%;
   height: auto;
