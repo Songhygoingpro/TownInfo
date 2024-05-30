@@ -103,7 +103,7 @@ section {
 
 .hero-section {
   height: calc(100vh - 75px);
-  background-image: url("./img/hero-page__backgrounds.png");
+  background-image: url("./img/hero-section__background.png");
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -128,13 +128,13 @@ section {
   color: rgb(0, 79, 141);
 }
 
-.hero-section__phonemockup {
+.hero-section__phoneimage--desktop {
   max-width: 84rem;
   width: 100%;
   height: auto;
 }
 
-.hero-section__phonemockup--mobile {
+.hero-section__phoneimage--mobile {
   max-width: 20rem;
   width: 100%;
   height: auto;
@@ -305,14 +305,14 @@ section {
   width: 100%;
 }
 
-.benefit-section__contents {
+.benefit-section__items {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.benefit-section__content {
+.benefit-section__item {
   display: flex;
   flex-direction: column;
   padding: 1rem 1.5rem;
@@ -321,7 +321,7 @@ section {
   gap: 1.5rem;
 }
 
-.benefit-section__textimagewrapper span {
+.benefit-section__content span {
   font-size: 14px;
 }
 
@@ -361,6 +361,12 @@ section {
 
 .benefit-section__locals img {
   max-width:9rem;
+  width: 100%;
+  height: auto;
+}
+
+.benefit-section__locals .benefit-section__item:nth-last-of-type(1) img {
+  max-width:12rem;
   width: 100%;
   height: auto;
 }
@@ -533,15 +539,15 @@ footer {
     font-size: 18px;
   }
 
-  .benefit-section__contents {
+  .benefit-section__items {
     grid-template-columns: 1fr;
   }
 
-  .benefit-section__content h4 {
+  .benefit-section__item h4 {
     font-size: 18px;
   }
 
-  .benefit-section__textimagewrapper p {
+  .benefit-section__content p {
     font-size: 16px;
   }
   

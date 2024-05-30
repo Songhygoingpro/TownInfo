@@ -28,3 +28,34 @@ window.addEventListener('scroll', function () {
 
   lastScrollTop = scrollTop;
 });
+
+const fullName = document.getElementById('full__name');
+        const email = document.getElementById('email');
+        const phoneNumber = document.getElementById('phone__number');
+        const companyName = document.getElementById('company__name');
+        const inquiryContents = document.getElementById('inquiry__contents');
+        const termsCheckbox = document.getElementById('register-page__term');
+        const submitBtn = document.getElementById('submit-btn');
+
+        function checkFormCompletion() {
+            if (
+                fullName.value.trim() !== '' &&
+                email.value.trim() !== '' &&
+                phoneNumber.value.trim() !== '' &&
+                companyName.value.trim() !== '' &&
+                inquiryContents.value.trim() !== '' &&
+                termsCheckbox.checked
+            ) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('disabled');
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('disabled');
+            }
+        }
+
+        document.querySelectorAll('input, textarea').forEach(element => {
+            element.addEventListener('input', checkFormCompletion);
+        });
+
+        termsCheckbox.addEventListener('change', checkFormCompletion);
