@@ -588,8 +588,8 @@ footer {
     padding: 0 1rem;
   }
 
-  .hero-section__phonemockup {
-    max-width: 60rem;
+  .hero-section__phoneimage--desktop {
+    max-width: 50rem;
     max-height: 60vh;
     width: 100%;
     height: auto;
