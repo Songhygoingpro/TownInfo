@@ -156,6 +156,10 @@ section {
   justify-content: center;
 }
 
+.about-section__content p {
+  font-size: 20px;
+}
+
 .about-section__image--desktop {
   background-image: url("./img/about-images.png");
   max-width: 1040px;
@@ -516,6 +520,10 @@ footer {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+
+  .about-section__content p {
+    font-size: 16px;
   }
 
   .section-title {
