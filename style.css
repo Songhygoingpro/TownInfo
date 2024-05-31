@@ -15,7 +15,11 @@ section {
 .header {
   position: sticky;
   top: 0;
-  transition: top ease 0.3s;
+  transition: top ease 0.3s, box-shadow ease 0.3s;
+}
+
+.header--scrolled {
+  box-shadow:rgba(0, 0, 0, 0.5) 0px 2px 5px 0px;
 }
 
 .logo {

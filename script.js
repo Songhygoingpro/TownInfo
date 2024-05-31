@@ -30,9 +30,9 @@ window.addEventListener('scroll', function () {
 
    // Apply the box-shadow when the header is off the top
    if (scrollTop > 0) {
-    header.style = "box-shadow:rgba(0, 0, 0, 0.5) 0px 2px 5px 0px;";
+    header.classList.add('header--scrolled');
   } else {
-    header.style = "box-shadow: rgb(0,0,0,0)";
+    header.classList.remove('header--scrolled');
   }
 
 
