@@ -19,7 +19,7 @@ const header = document.querySelector('.header');
 const burgerInput = document.getElementById('burger');
 
 window.addEventListener('scroll', function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
     header.style.top = '-75px';
