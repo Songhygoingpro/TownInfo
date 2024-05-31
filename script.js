@@ -37,7 +37,7 @@ const fullName = document.getElementById('full__name');
 const email = document.getElementById('email');
 const phoneNumber = document.getElementById('phone__number');
 const companyName = document.getElementById('company__name');
-const inquiryContents = document.getElementById('inquiry__contents');
+const inquiryContents = document.getElementById('inquiry__content');
 const termsCheckbox = document.getElementById('register-page__term');
 const submitBtn = document.getElementById('submit-btn');
 
