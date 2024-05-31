@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//hide the nav bar when scroll down
+//hide the navigation-bar when scroll down
 let lastScrollTop = 0;
 const header = document.querySelector('.header');
 const burgerInput = document.getElementById('burger');

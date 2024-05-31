@@ -460,7 +460,7 @@ footer {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 101%;
+  height: 100%;
   transform: scaleX(0);
   transform-origin: 0% 100%;
   transition: transform 0.5s ease-in-out;
