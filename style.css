@@ -208,7 +208,7 @@ section {
 .issue-section__companiesimage {
   position: absolute;
   bottom: 0;
-  right: 40%;
+  right: 38%;
   max-width: 8rem;
   width: 100%;
   height: auto;
@@ -217,7 +217,7 @@ section {
 .issue-section__localimage {
   position: absolute;
   bottom: 0;
-  right: 40%;
+  right: 35%;
   max-width: 10rem;
   width: 100%;
   height: auto;
@@ -506,7 +506,7 @@ footer {
 
 
 /*breakpoint*/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .hero-section {
     height: auto;
   }
@@ -538,7 +538,7 @@ footer {
     font-size: 16px;
   }
 
-  .issue-section__companiesimage, .issue-section__localimage {
+  .issue-section__companiesimage , .issue-section__localimage {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -559,25 +559,22 @@ footer {
   .benefit-section__content p {
     font-size: 16px;
   }
+
   .case-section__content {
     display: flex;
     padding: 1rem 1rem;
     gap: 1rem;
   }
 
-
   .case-section__content h4 {
     font-size: 18px;  
   }
-
   
   .case-section__content img {
     max-width: 4rem;
     width: 100%;
     max-height: 4rem;
   }
-  
-  
   
 }
 
