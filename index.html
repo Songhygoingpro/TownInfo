@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TownInfo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header d-flex w-100 justify-content-between px-3 px-md-5 py-4 align-items-center z-1 bg-white">
+        <div>
+            <a href="#">
+                <img src="./img/NM-Logo.png" class="logo" alt />
+            </a>
+        </div>
+        <nav class="d-md-block d-none">
+            <ul class="d-flex p-0 m-0 gap-4">
+                <li>
+                    <a class="text-decoration-none text-black" href="#about">ABOUT APPLICATION</a>
+                </li>
+                <li><a class="text-decoration-none text-black" href="#benefits">BENEFITS</a></li>
+                <li><a class="text-decoration-none text-black" href="#case">CASE</a></li>
+                <li>
+                    <a class="text-decoration-none text-black" href="/register.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-menu__container d-block d-md-none">
+            <input type="checkbox" id="burger" />
+            <label for="burger" class="nav-menu__button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-menu ">
+                <ul class="p-3 pb-3 m-0 d-flex flex-column gap-3">
+                    <li><a href="/index.html#about">ABOUT APPLICATION</a></li>
+                    <li><a href="/index.html#benefits">BENEFITS</a></li>
+                    <li><a href="/index.html#case">CASE</a></li>
+                    <li><a href="/register.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section__inner">
+                <div class="hero-section__content d-grid justify-content-center pt-5">
+                    <div class="hero-section__content position-relative d-flex flex-column gap-2 align-items-center">
+                        <div class="reveal-holder text-center">
+                            <div class="reveal-block right" data-aos="reveal-right"></div>
+                            <h1 class="hero-section__headline text-center">
+                                Town Information Application
+                            </h1>
+                        </div>
+                        <div class="reveal-holder text-center">
+                            <div class="reveal-block right" data-aos="reveal-right"></div>
+                            <h2 class="hero-section__subheadline text-center ">
+                                Everything in that town, with just one app.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-section__image px-3 d-flex justify-content-center ">
+                    <img src="./img/hero-section__phoneimage--desktop.png"
+                        class="hero-section__phoneimage--desktop d-md-block d-none" data-aos="fade-up" alt />
+                    <img src="./img/hero-section__phoneimage--mobile.jpg"
+                        class="hero-section__phoneimage--mobile d-md-none d-block " data-aos="fade-up" alt />
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about-section__inner grid justify-content-center pt-5">
+                <div class="about-section__content d-flex flex-column align-items-center gap-2 px-2">
+                    <div class="reveal-holder text-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="reveal-content section-title text-center ">
+                            What is the “Town Information Application”?
+                        </h1>
+                    </div>
+                    <p data-aos="fadeUp">
+                        The information application specialized for towns and housing
+                        complexes will maximize the attractiveness of the area and
+                        provide a rich experience for residents and visitors.
+                    </p>
+                </div>
+                <div class="about-section__image--desktop d-none d-md-flex align-items-end pb-3 pb-lg-5"
+                    data-aos="fadeUp">
+                    <ul
+                        class="about-section__imagecontent d-flex bg-white rounded-top-4 justify-content-between gap-3 gap-lg-5 p-2 p-lg-3 mx-3">
+                        <li>
+                            <h5>The latest information</h5>
+                            <p>
+                                Efficiently obtain the latest information about stores, events
+                                and famous places
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Function integretion</h5>
+                            <p>
+                                Consolidates functions such as advertising, payments,
+                                reservations, and online shopping
+                            </p>
+                        </li>
+                        <li>
+                            <h5>Community revitalization</h5>
+                            <p>
+                                Contribute to the revitalization of local communities and
+                                economies
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-section__images--mobile d-md-none d-grid">
+                    <div class="about-section__imagewrapper--mobile p-2 d-flex flex-column align-items-center"
+                        data-aos="fadeUp">
+                        <img class="about-section__image--mobile" src="./img/about-section--mobile.png" alt />
+                        <p class="fw-medium">
+                            Efficiently obtain the latest information about stores, events
+                            and famous place
+                        </p>
+                    </div>
+                    <div class="about-section__imagewrapper--mobile p-2 d-flex flex-column align-items-center"
+                        data-aos="fadeUp">
+                        <img class="about-section__image--mobile" src="./img/about-section--mobile1.png" alt />
+                        <p class="fw-medium">
+                            Consolidates functions such as advertising, payments,
+                            reservations, and online shopping
+                        </p>
+                    </div>
+                    <div class="about-section__imagewrapper--mobile p-2 d-flex flex-column align-items-center"
+                        data-aos="fadeUp">
+                        <img class="about-section__image--mobile" src="./img/about-section--mobile2.png" alt />
+                        <p class="fw-medium">
+                            Contribute to the revitalization of local communities and
+                            economies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="issue-section d-flex justify-content-center">
+            <div class="issue-section__inner d-grid px-3 gap-4 pt-5">
+                <div class="issue-section__title d-flex justify-content-center">
+                    <div class="reveal-holder d-flex justify-content-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="reveal-content section-title text-center ">
+                            Do you have those issues?
+                        </h1>
+                    </div>
+                </div>
+                <div class="issue-section__boxes d-grid gap-3">
+                    <div class="issue-section__box w-100" data-aos="fadeUp">
+                        <div class="issue-section__subtitle p-3 rounded-top-3 d-flex justify-content-between">
+                            <h4 class="text-white">Issues of stores and companies</h4>
+                            <img class="issue-section__companiesimage d-none d-md-block"
+                                src="./img/issue-companies-illustration.png" alt="" />
+                        </div>
+                        <ul class="issue-section__items p-3 m-0">
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class="fw-medium">Name search is required to get information on SNS*</p>
+                            </li>
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class="fw-medium">SNS has an information gap because the applications utilized
+                                    differ by country and age group</p>
+                            </li>
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class="  fw-medium">
+                                    Forgot to update SNS
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="issue-section__box w-100" data-aos="fadeUp">
+                        <div class="issue-section__subtitle p-3 rounded-top-3 d-flex">
+                            <h4 class="text-white">Issues of locals</h4>
+                            <img class="issue-section__localimage d-none d-md-flex"
+                                src="./img/issue-local-illustration.png" alt="" />
+                        </div>
+                        <ul class="issue-section__items p-3 m-0">
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class=" fw-medium">Difficult to keep up to date all latest information each time as
+                                    areas are developed</p>
+                            </li>
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class="fw-medium">A new store has opened in the previously vacant lot</p>
+                            </li>
+                            <li class="issue-section__item d-flex gap-3">
+                                <img class="issue-section__point" src="./img/issue-point.png" alt />
+                                <p class="fw-medium">
+                                    Visiting the restaurant you wanted to go to, it is closed or temporarily closed
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="suggestion-section d-flex justify-content-center">
+            <div class="suggestion-section__inner d-grid gap-4 pt-5">
+                <div class="suggestion-section__title d-flex justify-content-center px-3">
+                    <div class="reveal-holder d-flex justify-content-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="text-center reveal-content section-title">
+                            What you can do with the Application?
+                        </h1>
+                    </div>
+                </div>
+                <img class="suggestion-section__image--desktop d-md-flex d-none " data-aos="fadeUp"
+                    src="./img/suggest-section__background--desktop.png" alt>
+                <div class="suggestion-section__content d-grid d-md-none">
+                    <div class="suggestion-section__bg--mobile " data-aos="fadeUp">
+                        <p>The Town Information application, which compiles real-time information on all stores,
+                            services, and facilities in a town or housing complex, makes local resident's life more
+                            convenient.</p>
+                    </div>
+                    <div class="suggestion-section__image--mobile suggestion-section__images--mobile" data-aos="fadeUp">
+                        <img src="./img/suggestion-section--mobile.png" alt>
+                    </div>
+                    <div class="suggestion-section__image--mobile1 suggestion-section__images--mobile"
+                        data-aos="fadeUp">
+                        <img src="./img/suggestion-section--mobile1.png" alt>
+                    </div>
+                    <div class="suggestion-section__image--mobile2 suggestion-section__images--mobile"
+                        data-aos="fadeUp">
+                        <img src="./img/suggestion-section--mobile2.png" alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefit-section d-grid justify-content-center" id="benefits">
+            <div class="benefit-section__inner d-grid gap-5 pt-5 px-3">
+                <div class="benefit-section__companies d-flex flex-column justify-content-center gap-4">
+                    <div class="benefit-section__title d-flex justify-content-center">
+                        <div class="reveal-holder d-flex justify-content-center">
+                            <div class="reveal-block right" data-aos="reveal-right"></div>
+                            <h1 class="section-title reveal-content">Stores,Restaurants and Companies</h1>
+                        </div>
+                    </div>
+                    <ul class="benefit-section__items p-0 m-0">
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Revenue and attract customers from advertisement</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Advertisement allows you to attract customers and generate revenue
+                                    <span>(Monthly advertising fee is charged)</span><br>
+                                    &rarr; Management of the information you provide
+                                </p><img src="./img/benefit-section__companiesimage.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center ">Attract more customers and increase sales by posting on the
+                                application</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Store information, photos, SNS and coupons can be posted on the
+                                    application <span>(Usage fee is charged)</span><br>
+                                    &rarr; Increase in exposure attract more customers. It leads to higher sales</p>
+                                <img src="./img/benefit-section__companiesimage1.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Revenue from the online store</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Orders can be taken from in and out of town through the online
+                                    store
+                                    <span>(Fees charged as a percentage of sales costs)</span>
+                                </p><img src="./img/benefit-section__companiesimage2.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Revenue from delivery</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Sales to a wide range of customers are available and the
+                                    application enhance user convenience
+                                    <span>(A partial usage fee is charged for delivery costs)</span>
+                                </p><img src="./img/benefit-section__companiesimage3.png" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefit-section__users d-flex flex-column justify-content-center gap-4">
+                    <div class="benefit-section__title d-flex justify-content-center">
+                        <div class="reveal-holder d-flex justify-content-center">
+                            <div class="reveal-block right" data-aos="reveal-right"></div>
+                            <h1 class="section-title reveal-content">Residents (Application users)</h1>
+                        </div>
+                    </div>
+                    <ul class="benefit-section__items p-0 m-0">
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Life becomes more convenient </h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Comfortable shopping and service are available</p><img
+                                    src="./img/benefit-section__usersimage.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Easier payments</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">One payment system can complete everything and improve the quality
+                                    of life</p><img src="./img/benefit-section__usersimage1.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Information can be viewed in one place</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Information is enriched by
+                                    bringing all information
+                                    together and getting the latest
+                                    information
+                                </p><img src="./img/benefit-section__usersimage2.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Improvement of well-being</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Enriched information and community revitalization will improve the
+                                    well-being of its residents</p><img src="./img/benefit-section__usersimage3.png"
+                                    alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefit-section__locals d-flex flex-column justify-content-center gap-4">
+                    <div class="benefit-section__title d-flex justify-content-center">
+                        <div class="reveal-holder d-flex justify-content-center">
+                            <div class="reveal-block right" data-aos="reveal-right"></div>
+                            <h1 class="section-title reveal-content">Local, Municipalities, and Companies</h1>
+                        </div>
+                    </div>
+                    <ul class="benefit-section__items p-0 m-0">
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Creation of new employment</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Increase in deliveries and other services will create jobs</p><img
+                                    src="./img/benefit-section__localsimage.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Increase in immigrants and visitors</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">Increase in immigrants and visitors <br>
+                                    &rarr; Recognition by more people will lead to local revitalization</p><img
+                                    src="./img/benefit-section__localsimage1.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Reduction of vacant lots</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">As their lives in that area become more affluent, more people will
+                                    move to the area and then vacant lots and tenants will decreased</p><img
+                                    src="./img/benefit-section__localsimage2.png" alt>
+                            </div>
+                        </li>
+                        <li class="benefit-section__item" data-aos="fade-up">
+                            <h4 class="text-center">Community revitalization</h4>
+                            <div
+                                class="benefit-section__content flex-sm-row flex-column align-items-center align-items-md-start d-flex gap-2">
+                                <p class="fw-medium">The economy will be stimulated by a decrease in vacant lots and an
+                                    increase in employment</p><img src="./img/benefit-section__localsimage3.png" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="benefit-section__overall d-flex flex-column pt-5 gap-3">
+                <div class="benefit-section__title d-flex justify-content-center">
+                    <div class="reveal-holder d-flex justify-content-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="section-title reveal-content">Overall Benefits</h1>
+                    </div>
+                </div>
+                <img src="./img/benefit-section__overall.png" data-aos="fadeUp" alt>
+            </div>
+        </section>
+        <section class="case-section d-grid justify-content-center" id="case">
+            <div class="case-section__inner pt-5 d-grid gap-4">
+                <div class="case-section__title d-flex justify-content-center">
+                    <div class="reveal-holder d-flex justify-content-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="section-title reveal-content">The case of Application</h1>
+                    </div>
+                </div>
+                <ul class="case-section__contents d-grid gap-3 px-3">
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
+                        <h4>Increased stores SNS <span>followers by about 100</span>
+                            <br> → Leads to increased recognition
+                        </h4>
+                    </li>
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
+                        <h4>Paid advertisement did not produce outcomes, but introduction of the
+                            application has <span>increased followers and customers</span></h4>
+                    </li>
+                    <li class="case-section__content" data-aos="fade-up"><img src="./img/case-point.png" alt>
+                        <h4>Instagram of “TANBAMU”, an Osaka Senshu region information site,
+                            reached <span>more than 5,000 followers</span> in about 3 months! Rapidly growing!</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="conclusion-section d-grid justify-content-center">
+            <div class="conclusion-section__inner  pt-5 d-flex flex-column align-items-center gap-4">
+                <div class="conclusion-section__title d-flex justify-content-center">
+                    <div class="reveal-holder d-flex justify-content-center">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1 class="section-title reveal-content">Conclusion</h1>
+                    </div>
+                </div>
+                <img src="./img/conclusion-section__image.png" data-aos="fadeUp" alt>
+                <h3 class="text-center">More people recognize the city's development and attracts attention from all
+                    over the world</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__inner">
+            <p>© 2024 NEXT MAKE All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+            offset: 0,
+        });
+        document.querySelectorAll('img').forEach((img) => {
+            img.addEventListener('load', () => {
+                AOS.refresh();
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
